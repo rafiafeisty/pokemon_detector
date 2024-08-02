@@ -1,0 +1,123 @@
+:root{
+    --dark-blur:#0a0a23;
+    --light-grey:rgb(206, 202, 202);
+    --blue-back:rgb(95, 93, 201);
+    --purple:#7f21ab;
+}
+body{
+    background-color: var(--dark-blur);
+    color: white;
+}
+img{
+    height:120px;
+    width:200px;
+}
+.heading{
+    text-align: center;
+    font-weight:500;
+    font-size:32px;
+}
+.pokemon-search{
+    height:750px;
+    background-color: #f5f6f7;
+    box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    margin:20px auto 20px auto;
+    border-radius: 20px;
+}
+input:focus{
+    box-shadow: 0 0 10px var(--blue-back);
+}
+#search-input{
+    width:180px;
+    height:20px;
+}
+#search-button{
+    background-color: var(--purple);
+    color: white;
+    border-radius: 40px;
+    width:80px;
+    height:30px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.search{
+    color:black;
+    font-size:25px;
+    text-align: center;
+}
+th{
+    background-color: var(--purple);
+    color:white;
+    margin:3px;
+    width:9px;
+    height:10px;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 5px;
+}
+td{
+    
+    background-color: var(--purple);
+    color:white;
+    margin:8px;
+    width:173px;
+    height:26px;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 5px;
+}
+
+table{
+    margin-top: 3px;
+    margin-left: 10px;
+    border-spacing:6px;
+}
+.name-id{
+    height:218px;
+    background-color: #f0f1f7;
+    margin-top:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.names-ids {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    color:black
+}
+.weight-height {
+    margin-top: -13px;
+    color:black;
+    display: flex;
+    justify-content: flex-start;
+}
+#sprite-container{
+    text-align: center;
+}
+#types{
+    min-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.type{
+
+  width: 66px;
+  padding: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+  text-transform: uppercase;
+  margin:0 4px 0 4px;
+}
